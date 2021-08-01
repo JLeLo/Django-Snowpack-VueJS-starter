@@ -36,3 +36,8 @@ E.g. create it in `D:\MFB Project` folder
 **Step 6**: Create a new terminal on VS Code and run snowpack (Vue.js), you need to use snowpack.config.mjs then only snowpack will run on port 8083
 
 `npm run start`
+
+![2.PNG]
+
+**Step 7**: In this way we integreate Django "Ok doke" with Vue app (src/App.vue)
+
