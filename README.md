@@ -27,12 +27,12 @@ E.g. create it in "D:\MFB Project" folder
 
 **Step 5**: You show have django running on port 8082 and snowpack (Vue.js) running on port 8083
 
-cd "MFB Project\MFB"
+`cd "MFB Project\MFB"`
 
-"D:\MFB Project\Scripts\activate.bat"
+`"D:\MFB Project\Scripts\activate.bat"`
 
-python manage.py runserver 0.0.0.0:8002
+`python manage.py runserver 0.0.0.0:8002`
 
 **Step 6**: Create a new terminal on VS Code and run snowpack (Vue.js), you need to use snowpack.config.mjs then only snowpack will run on port 8083
 
-npm run start
+`npm run start`
