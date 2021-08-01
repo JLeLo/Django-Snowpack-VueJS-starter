@@ -12,27 +12,20 @@ OS : Windows
 ## Steps: 
 Note: These are not detailed steps, just an overview of steps.
 
-Step 1: Create a python virtual environment
+**Step 1**: Create a python virtual environment
 E.g. create it in "D:\MFB Project" folder
 
-Step 2: Install Django, you can follow any youtube video, but follow the folder structure as mentioned in the project, as resources are referenced by the specific folder structure in the project. Example, https://www.youtube.com/watch?v=MmxVlwm6fN0
+**Step 2**: Install Django, you can follow any youtube video, but follow the folder structure as mentioned in the project, as resources are referenced by the specific folder structure in the project. Example, https://www.youtube.com/watch?v=MmxVlwm6fN0
 
-Step 3: Install https://github.com/snowpackjs/snowpack/tree/main/create-snowpack-app/app-template-vue you can follow any youtube tutorial for it. Example, https://www.youtube.com/watch?v=6i7oMANRfMs
+**Step 3**: migrate models in django database. Djanog uses models.py to create new data in database. And if you edit models.py you need to propogate the changes to the database.
 
-Step 4: You show have django running on port 8082 and snowpack (Vue.js) running on port 8083
+`python manage.py makemigrations`
 
+`python manage.py migrate`
 
-python manage.py collectstatic
+**Step 4**: Install https://github.com/snowpackjs/snowpack/tree/main/create-snowpack-app/app-template-vue you can follow any youtube tutorial for it. Example, https://www.youtube.com/watch?v=6i7oMANRfMs
 
-------------------------
-
-python manage.py makemigrations
-
-python manage.py migrate
-
--------------------------
-
-D:
+**Step 5**: You show have django running on port 8082 and snowpack (Vue.js) running on port 8083
 
 cd "MFB Project\MFB"
 
@@ -40,6 +33,6 @@ cd "MFB Project\MFB"
 
 python manage.py runserver 0.0.0.0:8002
 
-yarn dev serve
+**Step 6**: Create a new terminal on VS Code and run snowpack (Vue.js), you need to use snowpack.config.mjs then only snowpack will run on port 8083
 
 npm run start
