@@ -7,7 +7,6 @@ OS : Windows
 3. Django : http://172.0.0.1:8082
 4. Snowpack (Vue.js) : http://127.0.0.1:8083
 5. As Django runs on different port and Snowpack (Vue.js) runs on different port, we integrate them by calling Snowpack URL from Django App. This is possible because of snowpack mount configuration. (/static, /src, etc...). 
-6. In my project, there is /public mount, it is just mentioned for example. Also /static does not mean "Static" as I have included ".scss files" also in that. You can always change it and define folder structure that you are comfortable with.
 
 
 ## Steps: 
@@ -49,7 +48,7 @@ E.g. create it in `D:\MFB Project` folder
 <html lang="en">
     <head>
         <!-- <link rel="stylesheet" type="text/css" href="../static/css/index.css" /> -->
-        <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8083/public/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8083/static/images/favicon.ico" />
     </head>
     <body>
         <h2>Ok doke</h2>
@@ -64,9 +63,9 @@ E.g. create it in `D:\MFB Project` folder
 ```js
 // "static/js/index.js" (It is snowpack itegrated/bundled file)
 
-import "../scss/index.scss";
+import "../../src/scss/index.scss";
 
-import "../../src/ProjectListingApp.js";
+import "./ProjectListingApp.js";
 
 if (import.meta.hot) {
     import.meta.hot.accept(({ module }) => {
@@ -75,6 +74,7 @@ if (import.meta.hot) {
 }
 
 document.querySelector("h2").innerHTML = "djsnowpack working fine !!!";
+
 
 ```
 
