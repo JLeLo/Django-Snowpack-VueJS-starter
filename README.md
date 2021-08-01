@@ -42,6 +42,40 @@ E.g. create it in `D:\MFB Project` folder
 
 **Step 7**: In this way we integreate Django "Ok doke" with Vue app (src/App.vue)
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="../static/css/index.css" /> -->
+        <link rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8083/public/favicon.ico" />
+    </head>
+    <body>
+        <h2>Ok doke</h2>
+        <div id="app"></div>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <script type="module" src="http://127.0.0.1:8083/static/js/index.js"></script>
+    </body>
+</html>
+
+```
+
+```js
+
+import "../scss/index.scss";
+
+import "../../src/ProjectListingApp.js";
+
+if (import.meta.hot) {
+    import.meta.hot.accept(({ module }) => {
+        import.meta.hot.invalidate();
+    });
+}
+
+document.querySelector("h2").innerHTML = "djsnowpack working fine !!!";
+
+```
+
+
 ![Django and Vue Successful Integration](1.PNG)
 
 ![Snowpack Server](3.PNG)
