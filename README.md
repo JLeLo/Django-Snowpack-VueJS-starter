@@ -43,7 +43,7 @@ E.g. create it in `D:\MFB Project` folder
 **Step 7**: In this way we integreate Django "mfb/templates/index.html" with Vue app "src/ProjectListingApp.vue"
 
 ```html
-<!-- mfb/templates/index.html --> 
+<!-- mfb/templates/index.html (It is Django template file) --> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +62,7 @@ E.g. create it in `D:\MFB Project` folder
 ```
 
 ```js
-// "static/js/index.js" (it is snowpack itegrated/bundled file)
+// "static/js/index.js" (It is snowpack itegrated/bundled file)
 
 import "../scss/index.scss";
 
