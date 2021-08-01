@@ -40,9 +40,11 @@ E.g. create it in `D:\MFB Project` folder
 
 ![Django and Snowpack (Vue.js) on different port](2.PNG)
 
-**Step 7**: In this way we integreate Django "Ok doke" with Vue app (src/App.vue)
+**Step 7**: In this way we integreate Django "mfb/templates/index.html" with Vue app "src/ProjectListingApp.vue"
 
 ```html
+<!-- mfb/templates/index.html --> 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -60,6 +62,7 @@ E.g. create it in `D:\MFB Project` folder
 ```
 
 ```js
+// "static/js/index.js" (it is snowpack itegrated/bundled file)
 
 import "../scss/index.scss";
 
