@@ -37,7 +37,10 @@ E.g. create it in `D:\MFB Project` folder
 
 `npm run start`
 
-![2.PNG]
+![Django and Snowpack (Vue.js) on different port](2.PNG)
 
 **Step 7**: In this way we integreate Django "Ok doke" with Vue app (src/App.vue)
 
+![Django and Vue Successful Integration](1.PNG)
+
+![Snowpack Server](3.PNG)
