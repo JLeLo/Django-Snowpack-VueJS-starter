@@ -13,7 +13,7 @@ OS : Windows
 Note: These are not detailed steps, just an overview of steps.
 
 **Step 1**: Create a python virtual environment
-E.g. create it in "D:\MFB Project" folder
+E.g. create it in `D:\MFB Project` folder
 
 **Step 2**: Install Django, you can follow any youtube video, but follow the folder structure as mentioned in the project, as resources are referenced by the specific folder structure in the project. Example, https://www.youtube.com/watch?v=MmxVlwm6fN0
 
