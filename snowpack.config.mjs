@@ -2,9 +2,8 @@
 export default {
     mount: {
         "mfb/templates": { url: "/", static: true },
-        public: { url: "/public", static: true },
         src: { url: "/src" },
-        static: { url: "/static" },
+        static: { url: "/static", static: true },
     },
     plugins: [
         /* snowpack plugins: */

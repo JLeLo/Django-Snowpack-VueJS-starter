@@ -1,6 +1,6 @@
-import "../scss/index.scss";
+import "../../src/scss/index.scss";
 
-import "../../src/ProjectListingApp.js";
+import "./ProjectListingApp.js";
 
 if (import.meta.hot) {
     import.meta.hot.accept(({ module }) => {
