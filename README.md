@@ -6,7 +6,8 @@ OS : Windows
 2. Snowpack is used to run Vue.js and bundle JS, CSS, SCSS and other files. By default Vue.js can be install using VueCLI but here we are using Snowpack to do the same thing.
 3. Django : http://172.0.0.1:8082
 4. Snowpack (Vue.js) : http://127.0.0.1:8083
-5. As Django runs on different port and Snowpack (Vue.js) runs on different port, we integrate them by calling Snowpack URL from Django App. This is possible because of snowpack mount configuration. (/static, /src, etc...). 
+5. As Django runs on different port and Snowpack (Vue.js) runs on different port, we integrate them by calling Snowpack URL from Django App. This is possible because of snowpack mount configuration. (/static, /src, etc...).
+6. This project cannot be ran directly as I have masked Django secret key present in "Settings.py" file in Django root project directory. I would recommend to create your own environment from scratch.
 
 
 ## Steps: 
